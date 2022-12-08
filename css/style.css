@@ -1,10 +1,82 @@
 body{
     margin: 0;
-    color: green;
 }
 
 #container{
+    margin: none;
+    background-image: url("../img/Backgrounds/jungle_background.jpg") ;
     display: grid;
     height: 100vh;
-    background-color: yellowgreen;
+    column-gap: 15px;
+    grid-template-columns: 1fr 20%;
+    row-gap: 15px;
+    grid-template-rows: 15% 10% 20% 1fr;
+    grid-template-areas: 
+    'h1 h1'
+    'nv nv'
+    'ig sc1'
+    'ig sc2'
+    ;
+    background-color: green;
+}
+
+#h1{
+    display: flex;
+    grid-area: h1;
+    background-color: rgb(146, 173, 93);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#nv1{
+    display: grid;
+    grid-area: nv;
+    background-color: rgb(71, 103, 7);
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#nv11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv13{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#img1{
+    grid-area: ig;
+    background-color: rgb(170, 255, 0) ;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#sct1{
+    grid-area: sc1;
+    background-color: rgb(124, 163, 45) ;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#sct2{
+    grid-area: sc2;
+    background-color: rgb(98, 147, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 100px 100px 100px 100px;
 }
