@@ -2,9 +2,10 @@ body{
     margin: 0;
 }
 
-#container{
+#container1{
     margin: none;
-    background-image: url("../img/Backgrounds/jungle_background.jpg") ;
+    background-size: contain;
+    background-image: url("../img/Backgrounds/background2.jpg") ;
     display: grid;
     height: 100vh;
     column-gap: 15px;
@@ -17,7 +18,7 @@ body{
     'ig sc1'
     'ig sc2'
     ;
-    background-color: green;
+   /* background-color: green;*/
 }
 
 #h1{
@@ -26,7 +27,7 @@ body{
     background-color: rgb(146, 173, 93);
     justify-content: center;
     align-items: center;
-    border-radius: 100px 100px 100px 100px;
+    font-size: x-large;
 }
 
 #nv1{
@@ -63,6 +64,10 @@ body{
     grid-area: ig;
     background-color: rgb(170, 255, 0) ;
     border-radius: 100px 100px 100px 100px;
+    background-image: url("../img/Backgrounds/My_Tho\,_Vietnam._A_Viet_Cong_base_camp_being._In_the_foreground_is_Private_First_Class_Raymond_Rumpa\,_St_Paul\,_Minnesota_-_NARA_-_530621_edit.jpg");
+    background-size: contain;
+    background-size: 100% ;
+    background-position-y: 50%;
 }
 
 #sct1{
