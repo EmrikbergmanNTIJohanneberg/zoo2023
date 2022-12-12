@@ -4,13 +4,11 @@ body{
 
 #container1{
     margin: none;
-    background-size: contain;
+    background-size: cover;
     background-image: url("../img/Backgrounds/background2.jpg") ;
     display: grid;
     height: 100vh;
-    column-gap: 15px;
-    grid-template-columns: 1fr 20%;
-    row-gap: 15px;
+    grid-template-columns: 1fr 25%;
     grid-template-rows: 15% 10% 20% 1fr;
     grid-template-areas: 
     'h1 h1'
@@ -27,16 +25,19 @@ body{
     background-color: rgb(146, 173, 93);
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: xx-large;
+    margin-bottom: none;
 }
 
 #nv1{
+    margin-top: none;
+    margin-bottom: 15px;
     display: grid;
     grid-area: nv;
     background-color: rgb(71, 103, 7);
     text-decoration: none;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 100px 100px 100px 100px;
+    font-size: large; 
 }
 
 #nv11{
@@ -62,12 +63,12 @@ body{
 
 #img1{
     grid-area: ig;
-    background-color: rgb(170, 255, 0) ;
     border-radius: 100px 100px 100px 100px;
     background-image: url("../img/Backgrounds/My_Tho\,_Vietnam._A_Viet_Cong_base_camp_being._In_the_foreground_is_Private_First_Class_Raymond_Rumpa\,_St_Paul\,_Minnesota_-_NARA_-_530621_edit.jpg");
-    background-size: contain;
+    background-size: cover;
     background-size: 100% ;
     background-position-y: 50%;
+    margin: 15px;
 }
 
 #sct1{
@@ -76,6 +77,9 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 100px 100px 100px 100px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
 }
 
 #sct2{
@@ -84,4 +88,182 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 100px 100px 100px 100px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+#container2{
+    margin: none;
+    background-size: cover;
+    background-image: url("../img/Backgrounds/background2.jpg") ;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 10% 1fr;
+    grid-template-areas: 
+    'h2'
+    'nv2'
+    'sc21'
+    ;
+}
+
+#h21{
+    display: flex;
+    grid-area: h2;
+    background-color: rgb(146, 173, 93);
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#nv2{
+    margin-bottom: 15px;
+    display: grid;
+    grid-area: nv2;
+    background-color: rgb(71, 103, 7);
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: large;
+    
+}
+
+#nv21{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv22{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv23{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#sct21{
+    grid-area: sc21;
+    text-decoration: aliceblue;
+}
+
+#container3{
+    margin: none;
+    background-size: cover;
+    background-image: url("../img/Backgrounds/background2.jpg") ;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 10% 1fr;
+    grid-template-areas: 
+    'h3'
+    'nv3'
+    'mn'
+    ;
+}
+#h3{
+    display: flex;
+    grid-area: h3;
+    background-color: rgb(146, 173, 93);
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#nv3{
+    margin-bottom: 15px;
+    display: grid;
+    grid-area: nv3;
+    background-color: rgb(71, 103, 7);
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: large;
+    
+}
+
+#nv31{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv32{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nv33{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#main{
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas: 
+    'sc3 sc4'
+    ;
+}
+
+#sct31{
+    grid-area: sc3;
+    margin: 15px;
+    border-radius: 100px 100px 100px 100px;
+    background-color:rgb(71, 103, 7);
+}
+
+#sct311{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+   
+}
+
+#sct312{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#sct32{
+    grid-area: sc4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border-radius: 100px 100px 100px 100px;
+    background-color: rgb(98, 147, 0);
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr;
+}
+
+#sct321{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+}
+
+#sct322{
+    display: flex;
+    justify-content: center;
+    background-image: url(".../img/Backgrounds/");
+}
+
+#sct323{
+    display: flex;
+    justify-content: center;
 }
