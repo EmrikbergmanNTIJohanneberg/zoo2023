@@ -1,11 +1,33 @@
+@font-face {
+    font-family: 'title';
+    src: url('../fonts/rubriker/ForsvarsmaktenSans-Stencil.eot');
+    src: url('../fonts/rubriker/ForsvarsmaktenSans-Stencil.ttf');
+    src: url('../fonts/rubriker/ForsvarsmaktenSans-Stencil.woff');
+    src: url('../fonts/rubriker/ForsvarsmaktenSans-Stencil.woff2');
+}
+
+@font-face {
+    font-family: 'brödtext';
+    src: url('../fonts/p/ForsvarsmaktenSans-Regular.eot');
+    src: url('../fonts/p/ForsvarsmaktenSans-Regular.ttf');
+    src: url('../fonts/p/ForsvarsmaktenSans-Regular.woff');
+    src: url('../fonts/p/ForsvarsmaktenSans-Regular.woff2');
+}
+
 body{
     margin: 0;
+    background-size: cover;
+    background-image: url("../img/Backgrounds/background2.jpg") ;
+    font-family: 'title';
+}
+
+a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #container1{
-    margin: none;
-    background-size: cover;
-    background-image: url("../img/Backgrounds/background2.jpg") ;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 25%;
@@ -19,42 +41,25 @@ body{
    /* background-color: green;*/
 }
 
-#h1{
-    display: flex;
+.h1{
     grid-area: h1;
+    display: flex;
     background-color: rgb(146, 173, 93);
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
-    margin-bottom: none;
+    font-size: 55px;
 }
 
-#nv1{
-    margin-top: none;
-    margin-bottom: 15px;
-    display: grid;
+nav{
     grid-area: nv;
+    display: grid;
     background-color: rgb(71, 103, 7);
-    text-decoration: none;
+    margin-bottom: 15px;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: large; 
+    font-size: 34px;
 }
 
-#nv11{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#nv12{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#nv13{
+.snv{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +68,7 @@ body{
 
 #img1{
     grid-area: ig;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 30px 30px 30px 30px;
     background-image: url("../img/Backgrounds/My_Tho\,_Vietnam._A_Viet_Cong_base_camp_being._In_the_foreground_is_Private_First_Class_Raymond_Rumpa\,_St_Paul\,_Minnesota_-_NARA_-_530621_edit.jpg");
     background-size: cover;
     background-size: 100% ;
@@ -71,141 +76,131 @@ body{
     margin: 15px;
 }
 
-#sct1{
+#asd1{
     grid-area: sc1;
     background-color: rgb(124, 163, 45) ;
-    display: flex;
-    justify-content: center;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 30px 30px 30px 30px;
     margin-bottom: 15px;
     margin-top: 15px;
     margin-right: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    'ar'
+    'at'
+    ;
+
 }
 
-#sct2{
+#asd2{
     grid-area: sc2;
     background-color: rgb(98, 147, 0);
-    display: flex;
-    justify-content: center;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 30px 30px 30px 30px;
     margin-bottom: 15px;
     margin-right: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    'ar'
+    'at'
+    ;
 }
+
+.asd_rubrik{
+    grid-area: ar;
+    font-size: 34px;
+    margin: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asd_text{
+    grid-area: at;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family:'brödtext';
+    margin-top: 0px;
+}
+
 
 #container2{
     margin: none;
-    background-size: cover;
-    background-image: url("../img/Backgrounds/background2.jpg") ;
     display: grid;
+    font-family: 'title';
+    font-size: 21pt;
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 10% 1fr;
     grid-template-areas: 
-    'h2'
-    'nv2'
-    'sc21'
+    'h1'
+    'nv'
+    'wr'
     ;
 }
 
-#h21{
-    display: flex;
-    grid-area: h2;
-    background-color: rgb(146, 173, 93);
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-
-#nv2{
-    margin-bottom: 15px;
-    display: grid;
-    grid-area: nv2;
-    background-color: rgb(71, 103, 7);
-    text-decoration: none;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: large;
-    
-}
-
-#nv21{
+.wrapper {
+    grid-area: wr;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    width: 90%;
+    margin: 50px;
+    flex-wrap: wrap;
 }
 
-#nv22{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+.hampter{
+    width: 299px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    margin: 20px;
+    background-color: white;
 }
 
-#nv23{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+.hampter .pic {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-#sct21{
-    grid-area: sc21;
-    text-decoration: aliceblue;
+.pic img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.text {
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'brödtext';
+}
+
+.text h2 {
+    font-weight: 300;
+    font-family: 'title';
+    font-size: 16pt;
+}
+.text p{
+    font-size: 13pt;
 }
 
 #container3{
     margin: none;
-    background-size: cover;
-    background-image: url("../img/Backgrounds/background2.jpg") ;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 10% 1fr;
     grid-template-areas: 
-    'h3'
-    'nv3'
+    'h1'
+    'nv'
     'mn'
     ;
-}
-#h3{
-    display: flex;
-    grid-area: h3;
-    background-color: rgb(146, 173, 93);
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-
-#nv3{
-    margin-bottom: 15px;
-    display: grid;
-    grid-area: nv3;
-    background-color: rgb(71, 103, 7);
-    text-decoration: none;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: large;
-    
-}
-
-#nv31{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#nv32{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#nv33{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 }
 
 #main{
@@ -213,8 +208,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 20%;
     grid-template-areas: 
-    'sc3 sc4'
-    ;
+    'sc3 sc4';
 }
 
 #sct31{
@@ -229,14 +223,13 @@ body{
     justify-content: center;
     font-size: x-large;
     padding: 30px;
-   
 }
 
 #sct312{
     display: flex;
     justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #sct32{
@@ -248,9 +241,14 @@ body{
     background-color: rgb(98, 147, 0);
     display: grid;
     grid-template-rows: 10% 1fr 1fr;
+    grid-template-areas: 
+    'sc321'
+    'sc322'
+    'sc323';
 }
 
 #sct321{
+    grid-area: sc321;
     display: flex;
     justify-content: center;
     font-size: x-large;
@@ -258,12 +256,21 @@ body{
 }
 
 #sct322{
+    grid-area: sc322;
     display: flex;
     justify-content: center;
-    background-image: url(".../img/Backgrounds/");
+    padding: 15px;
 }
 
 #sct323{
+    grid-area: sc323;
     display: flex;
     justify-content: center;
+    padding: 15px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 100%;
 }
