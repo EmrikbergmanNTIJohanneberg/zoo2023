@@ -16,7 +16,7 @@
 
 body{
     margin: 0;
-    background-size: cover;
+    background-size: 120%;
     background-image: url("../img/Backgrounds/background2.jpg") ;
     font-family: 'title';
 }
@@ -30,21 +30,20 @@ a{
 #container1{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 25%;
-    grid-template-rows: 15% 10% 20% 1fr;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 15% 10% 25% 1fr;
     grid-template-areas: 
     'h1 h1'
     'nv nv'
     'ig sc1'
     'ig sc2'
     ;
-   /* background-color: green;*/
 }
 
 .h1{
     grid-area: h1;
     display: flex;
-    background-color: rgb(146, 173, 93);
+    background-color: rgb(137, 177, 56);
     justify-content: center;
     align-items: center;
     font-size: 55px;
@@ -53,8 +52,7 @@ a{
 nav{
     grid-area: nv;
     display: grid;
-    background-color: rgb(71, 103, 7);
-    margin-bottom: 15px;
+    background-color: rgb(75, 113, 0);
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 34px;
 }
@@ -69,20 +67,19 @@ nav{
 #img1{
     grid-area: ig;
     border-radius: 30px 30px 30px 30px;
-    background-image: url("../img/Backgrounds/My_Tho\,_Vietnam._A_Viet_Cong_base_camp_being._In_the_foreground_is_Private_First_Class_Raymond_Rumpa\,_St_Paul\,_Minnesota_-_NARA_-_530621_edit.jpg");
+    background-image: url("../img/Backgrounds/firstpage.jpg");
     background-size: cover;
-    background-size: 100% ;
-    background-position-y: 50%;
-    margin: 15px;
+    background-position-x: 50%;
+    margin: 30px;
 }
 
 #asd1{
     grid-area: sc1;
     background-color: rgb(124, 163, 45) ;
     border-radius: 30px 30px 30px 30px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
@@ -96,8 +93,8 @@ nav{
     grid-area: sc2;
     background-color: rgb(98, 147, 0);
     border-radius: 30px 30px 30px 30px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-right: 30px;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
@@ -109,8 +106,7 @@ nav{
 .asd_rubrik{
     grid-area: ar;
     font-size: 34px;
-    margin: 15px;
-    margin-bottom: 0px;
+    margin: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +115,7 @@ nav{
 .asd_text{
     grid-area: at;
     font-size: 21px;
-    margin-top: 15px;
+    margin-left: 21px;
     margin-bottom: 5px;
     font-family:'brödtext';
     margin-top: 0px;
@@ -127,10 +123,9 @@ nav{
 
 
 #container2{
-    margin: none;
+    margin: 0px;
     display: grid;
     font-family: 'title';
-    font-size: 21pt;
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 10% 1fr;
@@ -152,8 +147,8 @@ nav{
 }
 
 .hampter{
-    width: 299px;
-    height: 400px;
+    width: 400px;
+    height: 560px;
     border-radius: 10px;
     background-color: black;
     border: 1px solid white;
@@ -162,7 +157,7 @@ nav{
 }
 
 .hampter .pic {
-    height: 200px;
+    height: 300px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
@@ -172,22 +167,29 @@ nav{
 .pic img {
     height: 100%;
     width: 100%;
-
 }
 
 .text {
-    padding: 15px;
     box-sizing: border-box;
     font-family: 'brödtext';
 }
 
 .text h2 {
-    font-weight: 300;
     font-family: 'title';
-    font-size: 16pt;
+    font-size: 34px;
+    margin: 21px;
 }
-.text p{
-    font-size: 13pt;
+.text p {
+    font-size: 21px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.text a {
+    font-size: 21px;
+    margin-left: 21px;
+    color: blue;
+    text-decoration: underline;
 }
 
 #container3{
@@ -211,40 +213,35 @@ nav{
     'sc3 sc4';
 }
 
-#sct31{
+#om_oss{
     grid-area: sc3;
-    margin: 15px;
-    border-radius: 100px 100px 100px 100px;
-    background-color:rgb(71, 103, 7);
+    background-color: rgb(124, 163, 45) ;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    'ar'
+    'at'
+    ;
 }
 
-#sct311{
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    padding: 30px;
-}
-
-#sct312{
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#sct32{
+#hitta_hit{
     grid-area: sc4;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    border-radius: 100px 100px 100px 100px;
-    background-color: rgb(98, 147, 0);
+    background-color: rgb(124, 163, 45) ;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
     display: grid;
     grid-template-rows: 10% 1fr 1fr;
     grid-template-areas: 
-    'sc321'
+    'ar'
     'sc322'
-    'sc323';
+    'at'
+    ; 
 }
 
 #sct321{
